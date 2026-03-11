@@ -1,0 +1,36 @@
+version: 0.0.1
+type: plugin
+author: zhanghong
+name: dify-doc-extract-plugin
+label:
+  en_US: dify-doc-extract-plugin
+  ja_JP: dify-doc-extract-plugin
+  zh_Hans: dify-doc-extract-plugin
+  pt_BR: dify-doc-extract-plugin
+description:
+  en_US: Extract content from DOC files, comprising both text and images.
+  ja_JP: Extract content from DOC files, comprising both text and images.
+  zh_Hans: Extract content from DOC files, comprising both text and images.
+  pt_BR: Extract content from DOC files, comprising both text and images.
+icon: icon.svg
+icon_dark: icon-dark.svg
+resource:
+  memory: 268435456
+  permission: {}
+plugins:
+  tools:
+    - provider/dify-doc-extract-plugin.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: 0.0.1
+created_at: 2026-03-11T14:26:43.1823451+08:00
+privacy: PRIVACY.md
+repo: https://github.com/sourcestart/dify-doc-extract-plugin
+verified: false

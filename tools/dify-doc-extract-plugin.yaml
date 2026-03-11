@@ -1,0 +1,34 @@
+identity:
+  name: "dify-doc-extract-plugin"
+  author: "zhanghong"
+  label:
+    en_US: "dify-doc-extract-plugin"
+    zh_Hans: "dify-doc-extract-plugin"
+    pt_BR: "dify-doc-extract-plugin"
+    ja_JP: "dify-doc-extract-plugin"
+description:
+  human:
+    en_US: "Extract content from DOC files, comprising both text and images."
+    zh_Hans: "Extract content from DOC files, comprising both text and images."
+    pt_BR: "Extract content from DOC files, comprising both text and images."
+    ja_JP: "Extract content from DOC files, comprising both text and images."
+  llm: "Extract content from DOC files, comprising both text and images."
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+      ja_JP: クエリ文字列
+    human_description:
+      en_US: "Extract content from DOC files, comprising both text and images."
+      zh_Hans: "Extract content from DOC files, comprising both text and images."
+      pt_BR: "Extract content from DOC files, comprising both text and images."
+      ja_JP: "Extract content from DOC files, comprising both text and images."
+    llm_description: "Extract content from DOC files, comprising both text and images."
+    form: llm
+extra:
+  python:
+    source: tools/dify-doc-extract-plugin.py
