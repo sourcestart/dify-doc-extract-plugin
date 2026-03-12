@@ -65,6 +65,8 @@ class DifyDocExtractPluginTool(Tool):
                 },
             )
 
+        yield self.create_text_message(result["text"])
+
         yield self.create_json_message(
             {
                 "status": "success",
