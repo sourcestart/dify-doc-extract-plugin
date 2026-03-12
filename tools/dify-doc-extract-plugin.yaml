@@ -1,34 +1,34 @@
 identity:
-  name: "dify-doc-extract-plugin"
+  name: "doc_extractor"
   author: "zhanghong"
   label:
-    en_US: "dify-doc-extract-plugin"
-    zh_Hans: "dify-doc-extract-plugin"
-    pt_BR: "dify-doc-extract-plugin"
-    ja_JP: "dify-doc-extract-plugin"
+    en_US: "DOC Extractor"
+    zh_Hans: "DOC 提取器"
+    pt_BR: "Extrator DOC"
+    ja_JP: "DOC 抽出"
 description:
   human:
-    en_US: "Extract content from DOC files, comprising both text and images."
-    zh_Hans: "Extract content from DOC files, comprising both text and images."
-    pt_BR: "Extract content from DOC files, comprising both text and images."
-    ja_JP: "Extract content from DOC files, comprising both text and images."
-  llm: "Extract content from DOC files, comprising both text and images."
+    en_US: "Extract text and images from Microsoft Word .doc files."
+    zh_Hans: "提取 Microsoft Word .doc 文件中的文本和图片。"
+    pt_BR: "Extrai texto e imagens de arquivos .doc do Microsoft Word."
+    ja_JP: "Microsoft Word .doc ファイルからテキストと画像を抽出します。"
+  llm: "Extract text and images from an uploaded .doc file and return structured results."
 parameters:
-  - name: query
-    type: string
+  - name: input_file
+    type: file
     required: true
     label:
-      en_US: Query string
-      zh_Hans: 查询语句
-      pt_BR: Query string
-      ja_JP: クエリ文字列
+      en_US: DOC File
+      zh_Hans: DOC 文件
+      pt_BR: Arquivo DOC
+      ja_JP: DOC ファイル
     human_description:
-      en_US: "Extract content from DOC files, comprising both text and images."
-      zh_Hans: "Extract content from DOC files, comprising both text and images."
-      pt_BR: "Extract content from DOC files, comprising both text and images."
-      ja_JP: "Extract content from DOC files, comprising both text and images."
-    llm_description: "Extract content from DOC files, comprising both text and images."
-    form: llm
+      en_US: "Upload a .doc file for text and image extraction."
+      zh_Hans: "上传一个 .doc 文件进行文本和图片提取。"
+      pt_BR: "Envie um arquivo .doc para extração de texto e imagens."
+      ja_JP: ".doc ファイルをアップロードしてテキストと画像を抽出します。"
+    llm_description: "The source .doc file to parse."
+    form: form
 extra:
   python:
     source: tools/dify-doc-extract-plugin.py
