@@ -1,17 +1,13 @@
 version: 0.0.1
 type: plugin
 author: zhanghong
-name: dify-doc-extract-plugin
+name: doc_extract
 label:
-  en_US: dify-doc-extract-plugin
-  ja_JP: dify-doc-extract-plugin
-  zh_Hans: dify-doc-extract-plugin
-  pt_BR: dify-doc-extract-plugin
+  en_US: Doc Extract Plugin
+  zh_Hans: DOC提取插件
 description:
   en_US: Extract content from DOC files, comprising both text and images.
-  ja_JP: Extract content from DOC files, comprising both text and images.
-  zh_Hans: Extract content from DOC files, comprising both text and images.
-  pt_BR: Extract content from DOC files, comprising both text and images.
+  zh_Hans: 从DOC文件中提取内容，包括文本和图像。
 icon: icon.svg
 icon_dark: icon-dark.svg
 resource:
@@ -19,7 +15,7 @@ resource:
   permission: {}
 plugins:
   tools:
-    - provider/dify-doc-extract-plugin.yaml
+    - provider/doc-extract.yaml
 meta:
   version: 0.0.1
   arch:

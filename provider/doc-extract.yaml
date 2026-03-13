@@ -1,0 +1,15 @@
+identity:
+  author: "zhanghong"
+  name: "doc_extractor"
+  label:
+    en_US: "DOC Extractor"
+    zh_Hans: "DOC 提取器"
+  description:
+    en_US: "Extract text and images from Microsoft Word .doc files."
+    zh_Hans: "提取 Microsoft Word .doc 文件中的文本和图片。"
+  icon: "icon.svg"
+tools:
+  - tools/doc-extract.yaml
+extra:
+  python:
+    source: provider/doc-extract.py

@@ -4,14 +4,10 @@ identity:
   label:
     en_US: "DOC Extractor"
     zh_Hans: "DOC 提取器"
-    pt_BR: "Extrator DOC"
-    ja_JP: "DOC 抽出"
 description:
   human:
     en_US: "Extract text and images from Microsoft Word .doc files."
     zh_Hans: "提取 Microsoft Word .doc 文件中的文本和图片。"
-    pt_BR: "Extrai texto e imagens de arquivos .doc do Microsoft Word."
-    ja_JP: "Microsoft Word .doc ファイルからテキストと画像を抽出します。"
   llm: "Extract text and images from an uploaded .doc file and return structured results."
 parameters:
   - name: input_file
@@ -20,15 +16,11 @@ parameters:
     label:
       en_US: DOC File
       zh_Hans: DOC 文件
-      pt_BR: Arquivo DOC
-      ja_JP: DOC ファイル
     human_description:
       en_US: "Upload a .doc file for text and image extraction."
       zh_Hans: "上传一个 .doc 文件进行文本和图片提取。"
-      pt_BR: "Envie um arquivo .doc para extração de texto e imagens."
-      ja_JP: ".doc ファイルをアップロードしてテキストと画像を抽出します。"
     llm_description: "The source .doc file to parse."
     form: form
 extra:
   python:
-    source: tools/dify-doc-extract-plugin.py
+    source: tools/doc-extract.py
