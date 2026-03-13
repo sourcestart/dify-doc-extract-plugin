@@ -6,7 +6,7 @@ The DOC Extract Plugin follows strict data privacy protection principles when pr
 
 1. **Data does not leave user environment**: The plugin processes uploaded `.doc` files only within the Dify platform and does not send file content to any external servers.
 
-2. **Temporary file management**: Temporary files generated during processing will be immediately deleted upon completion of operations, leaving no persistent storage in the system.
+2. **In-memory processing**: All document processing occurs entirely in memory with no temporary files created on disk, eliminating any risk of data persistence.
 
 3. **Content extraction**: The plugin extracts only text and image content from documents and returns this content as processing results to the caller, without collecting any additional metadata or user information.
 

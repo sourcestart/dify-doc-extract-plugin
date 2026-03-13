@@ -65,6 +65,16 @@ Clear errors are returned for the following situations:
 
 This plugin uses the olefile library to directly parse the internal structure of Word documents without installing Microsoft Word or LibreOffice. It can reliably extract text and embedded images from legacy `.doc` files.
 
+## Data Processing Method
+
+- This plugin processes data in-memory only.
+- No temporary files are created on disk, ensuring enhanced privacy and security.
+
+## Limits
+
+- This version targets classic binary `.doc` (Word 97-2003 family).
+- Some uncommon OfficeArt variants may still fall back to signature scan behavior.
+
 ## Author
 
 Created by zhanghong
@@ -72,13 +82,3 @@ Created by zhanghong
 ## License
 
 MIT License
-
-## Temporary Files
-
-- This plugin parses in-memory bytes only.
-- No temporary files are created, so no residual temp artifacts are left.
-
-## Limits
-
-- This version targets classic binary `.doc` (Word 97-2003 family).
-- Some uncommon OfficeArt variants may still fall back to signature scan behavior.
